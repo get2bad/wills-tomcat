@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<web-app>
+    <servlet>
+        <servlet-name>wills</servlet-name>
+        <servlet-class>com.wills.tomcat.example.servlet.WillsServlet</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>wills</servlet-name>
+        <url-pattern>/wills</url-pattern>
+    </servlet-mapping>
+
+    <filter>
+        <filter-name>urlFilter</filter-name>
+        <filter-class>com.wills.tomcat.example.filter.WillsFilter</filter-class>
+    </filter>
+</web-app>
